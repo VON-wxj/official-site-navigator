@@ -1,0 +1,825 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": 1716500000000,
+  "sites": [
+    {
+      "id": "paypal",
+      "name": "PayPal",
+      "localizedNames": { "zh_CN": "PayPal贝宝" },
+      "category": "payment",
+      "region": "global",
+      "urls": [
+        { "pattern": "paypal.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "business", "developer", "newsroom", "story"], "priority": 100 }
+      ],
+      "searchAliases": ["paypal", "贝宝"],
+      "description": "Global online payment system",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "category": "payment",
+      "region": "global",
+      "urls": [
+        { "pattern": "stripe.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "dashboard", "docs", "support", "status"], "priority": 100 }
+      ],
+      "searchAliases": ["stripe"],
+      "description": "Online payment processing platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "alipay",
+      "name": "Alipay",
+      "localizedNames": { "zh_CN": "支付宝" },
+      "category": "payment",
+      "region": "CN",
+      "urls": [
+        { "pattern": "alipay.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "render", "global", "open", "docs"], "priority": 100 }
+      ],
+      "searchAliases": ["alipay", "支付宝", "zhifubao"],
+      "description": "Alipay digital payment platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "wechat-pay",
+      "name": "WeChat Pay",
+      "localizedNames": { "zh_CN": "微信支付" },
+      "category": "payment",
+      "region": "CN",
+      "urls": [
+        { "pattern": "pay.weixin.qq.com", "matchType": "exact", "protocols": ["https"], "priority": 100 }
+      ],
+      "searchAliases": ["wechat pay", "微信支付", "weixin pay"],
+      "description": "WeChat mobile payment service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "icbc-cn",
+      "name": "ICBC",
+      "localizedNames": { "zh_CN": "中国工商银行" },
+      "category": "banking",
+      "region": "CN",
+      "urls": [
+        { "pattern": "icbc.com.cn", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "mybank", "vip", "ebank", "b2b", "service"], "priority": 100 }
+      ],
+      "searchAliases": ["icbc", "工商银行", "工行"],
+      "description": "Industrial and Commercial Bank of China",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "ccb-cn",
+      "name": "CCB",
+      "localizedNames": { "zh_CN": "中国建设银行" },
+      "category": "banking",
+      "region": "CN",
+      "urls": [
+        { "pattern": "ccb.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "ibsbjstar", "ebank", "store"], "priority": 100 }
+      ],
+      "searchAliases": ["ccb", "建设银行", "建行"],
+      "description": "China Construction Bank",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "boc-cn",
+      "name": "Bank of China",
+      "localizedNames": { "zh_CN": "中国银行" },
+      "category": "banking",
+      "region": "CN",
+      "urls": [
+        { "pattern": "boc.cn", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "ebs", "ebspay"], "priority": 100 }
+      ],
+      "searchAliases": ["boc", "中国银行", "中行"],
+      "description": "Bank of China",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "abc-cn",
+      "name": "ABC",
+      "localizedNames": { "zh_CN": "中国农业银行" },
+      "category": "banking",
+      "region": "CN",
+      "urls": [
+        { "pattern": "abchina.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "ewealth", "perbank"], "priority": 100 }
+      ],
+      "searchAliases": ["abc", "农业银行", "农行"],
+      "description": "Agricultural Bank of China",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "cmb-cn",
+      "name": "CMB",
+      "localizedNames": { "zh_CN": "招商银行" },
+      "category": "banking",
+      "region": "CN",
+      "urls": [
+        { "pattern": "cmbchina.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "mobile", "app"], "priority": 100 }
+      ],
+      "searchAliases": ["cmb", "招商银行", "招行"],
+      "description": "China Merchants Bank",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "bank-of-america",
+      "name": "Bank of America",
+      "category": "banking",
+      "region": "US",
+      "urls": [
+        { "pattern": "bankofamerica.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "secure", "business", "locators"], "priority": 100 }
+      ],
+      "searchAliases": ["bank of america", "bofa", "boa"],
+      "description": "Bank of America Corporation",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "chase",
+      "name": "Chase",
+      "category": "banking",
+      "region": "US",
+      "urls": [
+        { "pattern": "chase.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "secure", "business", "personal"], "priority": 100 }
+      ],
+      "searchAliases": ["chase", "jp morgan chase"],
+      "description": "JPMorgan Chase Bank",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "wells-fargo",
+      "name": "Wells Fargo",
+      "category": "banking",
+      "region": "US",
+      "urls": [
+        { "pattern": "wellsfargo.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "connect", "business"], "priority": 100 }
+      ],
+      "searchAliases": ["wells fargo"],
+      "description": "Wells Fargo Bank",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "hsbc",
+      "name": "HSBC",
+      "localizedNames": { "zh_CN": "汇丰银行" },
+      "category": "banking",
+      "region": "global",
+      "urls": [
+        { "pattern": "hsbc.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "business", "personal"], "priority": 100 },
+        { "pattern": "hsbc.com.cn", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 }
+      ],
+      "searchAliases": ["hsbc", "汇丰银行", "汇丰"],
+      "description": "HSBC Holdings",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "localizedNames": { "zh_CN": "谷歌" },
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "google.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "mail", "drive", "docs", "accounts", "play", "photos", "maps", "calendar", "meet", "chat", "support", "developers", "cloud", "ads", "analytics", "myaccount"], "priority": 100 }
+      ],
+      "searchAliases": ["google", "谷歌"],
+      "description": "Google search and services",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "facebook",
+      "name": "Facebook",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "facebook.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "business", "developers", "mbasic", "web"], "priority": 100 }
+      ],
+      "searchAliases": ["facebook", "fb", "meta"],
+      "description": "Facebook social network",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "instagram.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "about", "business", "help"], "priority": 100 }
+      ],
+      "searchAliases": ["instagram", "ins", "ig"],
+      "description": "Instagram photo sharing platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "twitter",
+      "name": "X (Twitter)",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "x.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help", "business", "ads"], "priority": 100 },
+        { "pattern": "twitter.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help", "business", "ads", "developers"], "priority": 100 }
+      ],
+      "searchAliases": ["twitter", "x", "tweet"],
+      "description": "X (formerly Twitter) social platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "linkedin.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "business"], "priority": 100 }
+      ],
+      "searchAliases": ["linkedin", "领英"],
+      "description": "LinkedIn professional network",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "wechat",
+      "name": "WeChat",
+      "localizedNames": { "zh_CN": "微信" },
+      "category": "social_media",
+      "region": "CN",
+      "urls": [
+        { "pattern": "weixin.qq.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 },
+        { "pattern": "wechat.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 }
+      ],
+      "searchAliases": ["wechat", "微信", "weixin"],
+      "description": "WeChat messaging and social platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "weibo",
+      "name": "Weibo",
+      "localizedNames": { "zh_CN": "微博" },
+      "category": "social_media",
+      "region": "CN",
+      "urls": [
+        { "pattern": "weibo.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "s", "card"], "priority": 100 }
+      ],
+      "searchAliases": ["weibo", "微博", "新浪微博"],
+      "description": "Sina Weibo microblogging platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "category": "ecommerce",
+      "region": "global",
+      "urls": [
+        { "pattern": "amazon.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "sellercentral", "aws", "advertising"], "priority": 100 },
+        { "pattern": "amazon.co.uk", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 },
+        { "pattern": "amazon.de", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 },
+        { "pattern": "amazon.co.jp", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 }
+      ],
+      "searchAliases": ["amazon", "亚马逊"],
+      "description": "Amazon e-commerce and cloud platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "taobao",
+      "name": "Taobao",
+      "localizedNames": { "zh_CN": "淘宝" },
+      "category": "ecommerce",
+      "region": "CN",
+      "urls": [
+        { "pattern": "taobao.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "world", "ai"], "priority": 100 }
+      ],
+      "searchAliases": ["taobao", "淘宝"],
+      "description": "Taobao online shopping platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "jd",
+      "name": "JD.com",
+      "localizedNames": { "zh_CN": "京东" },
+      "category": "ecommerce",
+      "region": "CN",
+      "urls": [
+        { "pattern": "jd.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "mall", "global"], "priority": 100 }
+      ],
+      "searchAliases": ["jd", "京东", "jingdong"],
+      "description": "JD.com e-commerce platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "pinduoduo",
+      "name": "Pinduoduo",
+      "localizedNames": { "zh_CN": "拼多多" },
+      "category": "ecommerce",
+      "region": "CN",
+      "urls": [
+        { "pattern": "pinduoduo.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "mobile"], "priority": 100 }
+      ],
+      "searchAliases": ["pinduoduo", "拼多多", "pdd"],
+      "description": "Pinduoduo group-buying platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "ebay",
+      "name": "eBay",
+      "category": "ecommerce",
+      "region": "global",
+      "urls": [
+        { "pattern": "ebay.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "pages", "developer"], "priority": 100 }
+      ],
+      "searchAliases": ["ebay", "易趣"],
+      "description": "eBay online marketplace",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "category": "ecommerce",
+      "region": "global",
+      "urls": [
+        { "pattern": "shopify.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help", "community"], "priority": 100 }
+      ],
+      "searchAliases": ["shopify"],
+      "description": "Shopify e-commerce platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "category": "email",
+      "region": "global",
+      "urls": [
+        { "pattern": "mail.google.com", "matchType": "exact", "protocols": ["https"], "priority": 100 }
+      ],
+      "searchAliases": ["gmail", "google mail", "谷歌邮箱"],
+      "description": "Google email service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "outlook",
+      "name": "Outlook",
+      "category": "email",
+      "region": "global",
+      "urls": [
+        { "pattern": "outlook.live.com", "matchType": "exact", "protocols": ["https"], "priority": 100 },
+        { "pattern": "outlook.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 }
+      ],
+      "searchAliases": ["outlook", "hotmail", "live mail"],
+      "description": "Microsoft Outlook email service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "qq-mail",
+      "name": "QQ Mail",
+      "localizedNames": { "zh_CN": "QQ邮箱" },
+      "category": "email",
+      "region": "CN",
+      "urls": [
+        { "pattern": "mail.qq.com", "matchType": "exact", "protocols": ["https"], "priority": 100 }
+      ],
+      "searchAliases": ["qq mail", "qq邮箱", "QQ邮箱"],
+      "description": "Tencent QQ email service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "netease-mail",
+      "name": "Netease Mail",
+      "localizedNames": { "zh_CN": "网易邮箱" },
+      "category": "email",
+      "region": "CN",
+      "urls": [
+        { "pattern": "mail.163.com", "matchType": "exact", "protocols": ["https"], "priority": 100 }
+      ],
+      "searchAliases": ["163 mail", "网易邮箱", "163邮箱"],
+      "description": "Netease 163 email service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "category": "cloud_storage",
+      "region": "global",
+      "urls": [
+        { "pattern": "dropbox.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help"], "priority": 100 }
+      ],
+      "searchAliases": ["dropbox"],
+      "description": "Dropbox cloud storage",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "github.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "docs", "gist", "support", "education"], "priority": 100 }
+      ],
+      "searchAliases": ["github", "git"],
+      "description": "GitHub code hosting platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "localizedNames": { "zh_CN": "微软" },
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "microsoft.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "support", "learn", "azure", "docs", "developer", "answers"], "priority": 100 }
+      ],
+      "searchAliases": ["microsoft", "微软", "ms"],
+      "description": "Microsoft Corporation",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "localizedNames": { "zh_CN": "苹果" },
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "apple.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "support", "developer", "id", "music"], "priority": 100 }
+      ],
+      "searchAliases": ["apple", "苹果"],
+      "description": "Apple Inc.",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "baidu",
+      "name": "Baidu",
+      "localizedNames": { "zh_CN": "百度" },
+      "category": "utility",
+      "region": "CN",
+      "urls": [
+        { "pattern": "baidu.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "map", "tieba", "zhidao", "pan", "wenku", "image", "news"], "priority": 100 }
+      ],
+      "searchAliases": ["baidu", "百度"],
+      "description": "Baidu search engine",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "bing",
+      "name": "Bing",
+      "localizedNames": { "zh_CN": "必应" },
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "bing.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "cn"], "priority": 100 }
+      ],
+      "searchAliases": ["bing", "必应"],
+      "description": "Microsoft Bing search engine",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "category": "streaming",
+      "region": "global",
+      "urls": [
+        { "pattern": "netflix.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help"], "priority": 100 }
+      ],
+      "searchAliases": ["netflix"],
+      "description": "Netflix streaming service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube",
+      "category": "streaming",
+      "region": "global",
+      "urls": [
+        { "pattern": "youtube.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "music", "studio", "tv", "kids"], "priority": 100 }
+      ],
+      "searchAliases": ["youtube", "yt", "油管"],
+      "description": "YouTube video platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "category": "streaming",
+      "region": "global",
+      "urls": [
+        { "pattern": "spotify.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "open", "developer", "artists"], "priority": 100 }
+      ],
+      "searchAliases": ["spotify"],
+      "description": "Spotify music streaming",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "zoom.us", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "support", "marketplace"], "priority": 100 }
+      ],
+      "searchAliases": ["zoom"],
+      "description": "Zoom video conferencing",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "whatsapp.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "web", "business"], "priority": 100 }
+      ],
+      "searchAliases": ["whatsapp"],
+      "description": "WhatsApp messaging service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "t.me", "matchType": "domain", "protocols": ["https"], "priority": 100 },
+        { "pattern": "telegram.org", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "core"], "priority": 100 }
+      ],
+      "searchAliases": ["telegram", "tg"],
+      "description": "Telegram messaging platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "discord.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "support", "canary"], "priority": 100 }
+      ],
+      "searchAliases": ["discord"],
+      "description": "Discord chat platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "adobe",
+      "name": "Adobe",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "adobe.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "helpx", "creativecloud"], "priority": 100 }
+      ],
+      "searchAliases": ["adobe"],
+      "description": "Adobe creative software",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "canva.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["canva"],
+      "description": "Canva design platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "notion.so", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["notion"],
+      "description": "Notion workspace platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "airbnb",
+      "name": "Airbnb",
+      "category": "travel",
+      "region": "global",
+      "urls": [
+        { "pattern": "airbnb.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "zh"], "priority": 100 }
+      ],
+      "searchAliases": ["airbnb", "爱彼迎"],
+      "description": "Airbnb travel accommodation",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "booking",
+      "name": "Booking.com",
+      "category": "travel",
+      "region": "global",
+      "urls": [
+        { "pattern": "booking.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "secure"], "priority": 100 }
+      ],
+      "searchAliases": ["booking"],
+      "description": "Booking.com travel platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "ctrip",
+      "name": "Trip.com",
+      "localizedNames": { "zh_CN": "携程" },
+      "category": "travel",
+      "region": "CN",
+      "urls": [
+        { "pattern": "ctrip.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "hotels", "flights"], "priority": 100 },
+        { "pattern": "trip.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 90 }
+      ],
+      "searchAliases": ["ctrip", "携程", "trip.com", "xiecheng"],
+      "description": "Ctrip/Trip.com travel service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "12306-cn",
+      "name": "12306",
+      "localizedNames": { "zh_CN": "铁路12306" },
+      "category": "travel",
+      "region": "CN",
+      "urls": [
+        { "pattern": "12306.cn", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "kyfw"], "priority": 100 }
+      ],
+      "searchAliases": ["12306", "铁路12306", "火车票"],
+      "description": "Official China railway ticketing",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "meituan",
+      "name": "Meituan",
+      "localizedNames": { "zh_CN": "美团" },
+      "category": "delivery",
+      "region": "CN",
+      "urls": [
+        { "pattern": "meituan.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "i", "waimai"], "priority": 100 }
+      ],
+      "searchAliases": ["meituan", "美团", "美团外卖"],
+      "description": "Meituan food delivery and services",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "eleme",
+      "name": "Ele.me",
+      "localizedNames": { "zh_CN": "饿了么" },
+      "category": "delivery",
+      "region": "CN",
+      "urls": [
+        { "pattern": "ele.me", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["eleme", "饿了么", "elm"],
+      "description": "Ele.me food delivery platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "didi",
+      "name": "DiDi",
+      "localizedNames": { "zh_CN": "滴滴出行" },
+      "category": "travel",
+      "region": "CN",
+      "urls": [
+        { "pattern": "didiglobal.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["didi", "滴滴", "滴滴出行"],
+      "description": "DiDi ride-hailing service",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "binance",
+      "name": "Binance",
+      "category": "crypto",
+      "region": "global",
+      "urls": [
+        { "pattern": "binance.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["binance", "币安"],
+      "description": "Binance cryptocurrency exchange",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "coinbase",
+      "name": "Coinbase",
+      "category": "crypto",
+      "region": "global",
+      "urls": [
+        { "pattern": "coinbase.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "help", "pro"], "priority": 100 }
+      ],
+      "searchAliases": ["coinbase"],
+      "description": "Coinbase cryptocurrency exchange",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "cloudflare.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "dash", "developers", "community"], "priority": 100 }
+      ],
+      "searchAliases": ["cloudflare"],
+      "description": "Cloudflare CDN and security",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "duckduckgo",
+      "name": "DuckDuckGo",
+      "category": "utility",
+      "region": "global",
+      "urls": [
+        { "pattern": "duckduckgo.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "start"], "priority": 100 }
+      ],
+      "searchAliases": ["duckduckgo", "ddg"],
+      "description": "DuckDuckGo private search engine",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "reddit",
+      "name": "Reddit",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "reddit.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "old", "new"], "priority": 100 }
+      ],
+      "searchAliases": ["reddit"],
+      "description": "Reddit social news platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "wikipedia",
+      "name": "Wikipedia",
+      "category": "education",
+      "region": "global",
+      "urls": [
+        { "pattern": "wikipedia.org", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "en", "zh", "ja", "de", "fr", "es"], "priority": 100 }
+      ],
+      "searchAliases": ["wikipedia", "wiki", "维基百科"],
+      "description": "Wikipedia online encyclopedia",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "quora",
+      "name": "Quora",
+      "category": "education",
+      "region": "global",
+      "urls": [
+        { "pattern": "quora.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["quora"],
+      "description": "Quora Q&A platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "tiktok",
+      "name": "TikTok",
+      "category": "social_media",
+      "region": "global",
+      "urls": [
+        { "pattern": "tiktok.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "ads", "business", "developers"], "priority": 100 }
+      ],
+      "searchAliases": ["tiktok", "抖音国际版"],
+      "description": "TikTok short video platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "douyin",
+      "name": "Douyin",
+      "localizedNames": { "zh_CN": "抖音" },
+      "category": "social_media",
+      "region": "CN",
+      "urls": [
+        { "pattern": "douyin.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "creator"], "priority": 100 }
+      ],
+      "searchAliases": ["douyin", "抖音"],
+      "description": "Douyin short video platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "xiaohongshu",
+      "name": "Xiaohongshu",
+      "localizedNames": { "zh_CN": "小红书" },
+      "category": "social_media",
+      "region": "CN",
+      "urls": [
+        { "pattern": "xiaohongshu.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["xiaohongshu", "小红书", "redbook"],
+      "description": "Xiaohongshu lifestyle platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "bilibili",
+      "name": "Bilibili",
+      "localizedNames": { "zh_CN": "哔哩哔哩" },
+      "category": "streaming",
+      "region": "CN",
+      "urls": [
+        { "pattern": "bilibili.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www", "space", "live"], "priority": 100 }
+      ],
+      "searchAliases": ["bilibili", "哔哩哔哩", "b站"],
+      "description": "Bilibili video and streaming platform",
+      "lastUpdated": 1716500000000
+    },
+    {
+      "id": "zhihu",
+      "name": "Zhihu",
+      "localizedNames": { "zh_CN": "知乎" },
+      "category": "education",
+      "region": "CN",
+      "urls": [
+        { "pattern": "zhihu.com", "matchType": "domain", "protocols": ["https"], "allowedSubdomains": ["www"], "priority": 100 }
+      ],
+      "searchAliases": ["zhihu", "知乎"],
+      "description": "Zhihu Q&A platform",
+      "lastUpdated": 1716500000000
+    }
+  ]
+}

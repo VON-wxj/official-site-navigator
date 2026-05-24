@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "官网导航器",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "帮助您识别真实的官方网站，避免钓鱼和假冒网站。在可疑网站上显示警告，并在搜索引擎结果中高亮已验证的官方链接。",
+    "description": "Extension description"
+  }
+}

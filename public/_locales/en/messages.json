@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Official Site Navigator",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Helps you identify legitimate official websites and avoid phishing sites. Shows warnings on suspicious sites and highlights verified results in search engines.",
+    "description": "Extension description"
+  }
+}
